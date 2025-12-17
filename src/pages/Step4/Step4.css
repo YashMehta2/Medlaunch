@@ -1,0 +1,356 @@
+/* =========================
+   Step 4 - CSS
+   ========================= */
+
+.s4-page {
+  min-height: calc(100vh - 72px);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f7f9;
+}
+
+/* Main card */
+.s4-card {
+  width: 100%;
+  max-width: 960px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 40px 32px 64px 32px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+/* Headline */
+.s4-title {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #343434;
+}
+
+/* Choice cards row */
+.s4-choiceRow {
+  margin-top: 32px; /* Figma gap 32px */
+  width: 100%;
+  max-width: 896px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* each ~440px fill */
+  gap: 16px;
+}
+
+/* Choice card */
+.s4-choiceCard {
+  width: 100%;
+  height: 102px; /* Fixed 102px */
+  padding: 24px;
+  border-radius: 8px;
+  border: 1.5px solid #bbbbbb;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px; /* item spacing/xs */
+}
+
+.s4-choiceCard.is-selected {
+  background: #e2f0f8; /* selection color */
+}
+
+.s4-choiceHeading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #343434;
+}
+
+.s4-choiceSub {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #808080;
+}
+
+/* Title-only section spacing */
+.s4-methodSection {
+  margin-top: 32px;
+  width: 100%;
+  max-width: 896px;
+}
+
+/* =========================
+   Upload Blue Block (with 2 inner sections)
+   ========================= */
+.s4-uploadSection {
+  margin-top: 24px;
+  width: 100%;
+  max-width: 896px;
+
+  background: #e2f0f8;
+  border-radius: 8px;
+  border: 1px solid #c9d9e4;
+  overflow: hidden; /* makes inner top bar corners clean */
+}
+
+/* Inner Section A: top bar */
+.s4-uploadTopBar {
+  padding: 24px;
+  border-bottom: 1px solid rgba(26, 58, 112, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.s4-uploadHeading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #343434;
+  font: bold;
+}
+
+.s4-uploadSub {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #707070;
+  margin: 1px;
+}
+
+/* Inner Section B: content */
+.s4-dropzoneWrap {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Dropzone
+   Figma: Radius 10px, Border 1px dashed (4,4), Padding 40px, Gap 24px
+*/
+.s4-dropzone {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px dashed #1a3a70;
+  padding: 40px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  cursor: pointer;
+}
+
+.s4-cloudIcon {
+  font-size: 34px;
+  line-height: 1;
+  color: #808080;
+  height: 48px;
+  width: 48px;
+}
+
+.s4-dropTitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.s4-dropSub {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.s4-selectBtn {
+  height: 35px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  border: none;
+  background: #0056a3;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.s4-linkBtn {
+  border: none;
+  background: transparent;
+  color: #1a3a70;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 1px;
+  text-align: center;
+}
+
+.s4-hiddenInput {
+  display: none;
+}
+
+/* Uploaded list */
+.s4-uploadedLabel {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #343434;
+  font: bold;
+}
+
+.s4-fileList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.s4-fileMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.s4-fileTopRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.s4-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 999px;
+  background: #808080;
+  display: inline-block;
+}
+
+.s4-progressTrack {
+  width: 100%;
+  height: 3px; /* slim bar like design */
+  background: #d1d5db; /* light gray track */
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.s4-fileBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.s4-fileRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ✅ filename left, size right */
+  gap: 12px;
+}
+
+.s4-progressFill {
+  height: 100%;
+  background: #0b4f87; /* primary blue fill */
+  border-radius: 999px;
+}
+
+.s4-fileCard {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 14px 16px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.s4-fileLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.s4-fileCard.is-active {
+  border: 2px solid #0b4f87;
+}
+
+.s4-fileIcon {
+  font-size: 18px;
+}
+
+.s4-fileMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.s4-fileName {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 100%;
+}
+
+.s4-linkInline {
+  border: none;
+  background: transparent;
+  color: #0056a3;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin: 1px;
+  font-size: 14px;
+}
+
+.s4-fileRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.s4-fileSize {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #808080;
+}
+
+.s4-fileRemove {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: none;
+  background: #0b4f87;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}

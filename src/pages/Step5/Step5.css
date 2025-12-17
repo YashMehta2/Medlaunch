@@ -1,0 +1,248 @@
+/* PAGE */
+.s5-page {
+  min-height: calc(100vh - 72px);
+  padding: 32px 24px;
+  background: #f6f7f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* CARD */
+.s5-card {
+  width: 100%;
+  max-width: 960px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 40px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* SECTION */
+.s5-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.s5-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #343434;
+  font: bold;
+  line-height: 100%;
+}
+
+.s5-sub {
+  font-size: 14px;
+  color: #808080;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+/* INPUTS */
+.s5-input,
+.s5-search {
+  height: 44px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 0 12px;
+  font-size: 14px;
+  gap: 8px;
+}
+
+.s5-input.select-placeholder {
+  color: #bbbbbb;
+}
+
+.s5-option-input {
+  color: black;
+}
+
+.s5-search {
+  width: 100%;
+}
+
+.s5-select {
+  height: 44px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 0 36px 0 12px;
+  font-size: 14px;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='5' viewBox='0 0 10 5'><path d='M0 0L5 5L10 0Z' fill='%23000000'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px 5px;
+}
+
+/* SERVICES GRID */
+.s5-serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.s5-serviceCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 440px;
+  min-height: 207px;
+}
+
+.s5-serviceCard h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* BUTTONS */
+.s5-linkBtn {
+  background: none;
+  border: none;
+  color: #0056a3;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.s5-outlineBtn {
+  border: 1.5px solid #0056a3;
+  background: transparent;
+  color: #0056a3;
+  border-radius: 8px;
+  padding: 8px 24px;
+  min-height: 35px;
+  width: 180px;
+  cursor: pointer;
+  font-size: 14px;
+  font: bold;
+}
+
+/* GRID */
+.s5-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.s5-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.s5-field label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ACTIONS */
+.s5-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s5-right {
+  display: flex;
+  gap: 12px;
+}
+
+.s5-back {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.s5-secondary {
+  background: #0056a3;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+}
+
+.s5-primary {
+  background: #003f7d;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+}
+
+.s5-dateChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.s5-dateChips1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.s5-chip {
+  background: #0056a3;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.s5-chip1 {
+  color: #1a3a70;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid #0056a3;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.s5-chip button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.s5-chip1 button {
+  background: none;
+  border: none;
+  top: 9.33px;
+  left: 9.33px;
+  color: #1a3a70;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.s5-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent; /* IMPORTANT */
+  margin-top: 24px;
+}

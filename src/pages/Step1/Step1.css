@@ -1,0 +1,176 @@
+.s1-page {
+  min-height: calc(100vh - 72px);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f7f9;
+}
+
+.s1-card {
+  width: 100%;
+  max-width: 960px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 40px 32px 64px 32px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+.s1-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.s1-section + .s1-section {
+  margin-top: 64px;
+}
+
+.s1-sectionTitle {
+  margin: 0;
+  width: fit-content;
+  height: 33px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #4e4e4e;
+  display: flex;
+  align-items: center;
+}
+
+.s1-subTitle {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #4e4e4e;
+}
+
+.s1-subText {
+  margin: 0;
+  width: 100%;
+  max-width: 896px;
+  height: 19px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #808080;
+}
+
+.s1-fieldGroup {
+  width: 100%;
+  max-width: 896px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.s1-field {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 1px;
+  min-height: 23px;
+}
+
+.s1-label {
+  height: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #4e4e4e;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.s1-required {
+  color: #ce0829;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.s1-input {
+  width: 100%;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  padding: 13px;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #343434;
+}
+
+.s1-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+.s1-grid2 {
+  width: 100%;
+  max-width: 896px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.s1-checkboxRow {
+  width: 100%;
+  max-width: 896px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  height: 22px;
+}
+
+.s1-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #343434;
+}
+
+.s1-checkbox input {
+  width: 14px;
+  height: 14px;
+}
+
+.s1-emailActionRow {
+  width: 100%;
+  max-width: 896px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.s1-input.disabled {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  cursor: not-allowed;
+}

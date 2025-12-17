@@ -1,0 +1,106 @@
+.s2-page {
+  min-height: calc(100vh - 72px);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f7f9;
+}
+
+.s2-card {
+  width: 100%;
+  max-width: 960px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 40px 32px 64px 32px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+.s2-section {
+  width: 100%;
+  max-width: 896px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.s2-title {
+  margin: 0;
+  height: 33px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #343434;
+  display: flex;
+  align-items: center;
+}
+
+.s2-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.s2-labelRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 1px;
+  min-height: 23px;
+}
+
+.s2-label {
+  height: 22px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #343434;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.s2-required {
+  color: #ce0829;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.s2-radioGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  font: bold;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.s2-radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #343434;
+  user-select: none;
+}
+
+.s2-radio input {
+  width: 16px;
+  height: 16px;
+}
