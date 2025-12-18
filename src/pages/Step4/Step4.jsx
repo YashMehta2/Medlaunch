@@ -49,7 +49,6 @@ export default function Step4() {
     <>
       <div className="s4-page">
         <div className="s4-card">
-          {/* SECTION 1 */}
           <h2 className="s4-title">Do you have multiple sites or locations?</h2>
 
           <div className="s4-choiceRow">
@@ -87,16 +86,13 @@ export default function Step4() {
 
           {siteMode === "multiple" && (
             <>
-              {/* SECTION 2 (title only) */}
               <div className="s4-methodSection">
                 <h2 className="s4-title">
                   How would you like to add your site information?
                 </h2>
               </div>
 
-              {/* SECTION 3 (upload blue block with 2 inner sections) */}
               <div className="s4-uploadSection" onClick={handlecsvclick}>
-                {/* Inner Section A: top bar */}
                 <div className="s4-uploadTopBar">
                   <div className="s4-uploadHeading">Upload CSV / Excel</div>
                   <div className="s4-uploadSub">

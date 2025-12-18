@@ -16,7 +16,6 @@ export default function Step5() {
     <>
       <div className="s5-page">
         <div className="s5-card">
-          {/* SECTION 1 — Service Offering */}
           <div className="s5-section">
             <div>
               <h2 className="s5-title">Service Offering</h2>

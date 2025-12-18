@@ -30,7 +30,6 @@ function Section({ title, editPath, children }) {
 export default function Review() {
   return (
     <div className="review-page">
-      {/* BASIC INFO */}
       <Section title="Basic Information" editPath="/">
         <p>
           <b>Legal Entity</b>
@@ -46,14 +45,12 @@ export default function Review() {
         </p>
       </Section>
 
-      {/* FACILITY */}
       <Section title="Facility Details" editPath="/step-2">
         <p>
           <b>Facility Type</b>
         </p>
       </Section>
 
-      {/* LEADERSHIP */}
       <Section title="Leadership Contacts" editPath="/step-3">
         <p>
           <b>CEO</b>
@@ -75,7 +72,6 @@ export default function Review() {
         </p>
       </Section>
 
-      {/* SERVICES */}
       <Section title="Services & Certifications" editPath="/step-5">
         <p>
           <b>Services Provided</b>
@@ -107,9 +103,6 @@ export default function Review() {
         </p>
         <div className="pill-row"></div>
       </Section>
-
-      {/* SUBMIT */}
-      {/* READY TO SUBMIT */}
       <div className="review-submit">
         <h3 className="submit-title">Ready to Submit?</h3>
 
