@@ -129,3 +129,5 @@ The project currently focuses on UI implementation rather than end-to-end functi
 ```
 
 ```
+
+Video Link: https://drive.google.com/drive/folders/1gNd1m0TUyE198aJpfmjh1eiGzbks3z_k?usp=sharing
