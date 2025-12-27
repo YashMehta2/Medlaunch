@@ -16,7 +16,6 @@ export default function ProgressHeader() {
           Step {currentIndex + 1} of {STEPS.length}
         </span>
       </div>
-
       <ProgressBar />
     </div>
   );

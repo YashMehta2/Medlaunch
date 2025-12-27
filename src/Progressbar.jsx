@@ -27,7 +27,6 @@ export default function ProgressBar() {
             >
               {step.id}
             </div>
-
             <span
               className={`step__label-action ${
                 isActive || isCompleted ? "active" : ""
