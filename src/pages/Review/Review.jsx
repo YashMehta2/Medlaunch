@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Review.css";
+import StepNavigation from "../../StepNavigation";
 
 function Section({ title, editPath, children }) {
   const [open, setOpen] = useState(true);
@@ -121,6 +122,7 @@ export default function Review() {
           <button className="secondary-btn">Export to CSV</button>
         </div>
       </div>
+      <StepNavigation />
     </div>
   );
 }

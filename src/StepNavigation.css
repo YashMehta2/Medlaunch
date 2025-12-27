@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background: #f6f8fb;
+}
+
+.step-nav-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 60rem;
+  margin: 0rem auto 3rem;
+  padding: 0 1.5rem;
+  background: transparent;
+}
+
+.step-action {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.step-action:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: -3.75rem;
+  top: 1rem;
+  width: 3.25rem;
+  height: 0.125px;
+  background: #d6d6d6;
+  transform: translateY(-50%);
+}
+
+.step-action.completed::before {
+  background: #1a3a70;
+}
+
+.step__circle-action {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.125rem solid #d1d5db;
+  background: #fff;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  z-index: 2;
+}
+
+.step__circle-action.active,
+.step__circle-action.completed {
+  background: #1a3a70;
+  border-color: #1a3a70;
+  color: #fff;
+}
+
+.step__label-action {
+  position: absolute;
+  top: 2.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 8rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #9ca3af;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.step-action:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  width: 100%;
+  height: 0.125rem;
+  background: #d6d6d6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.step-action.completed:not(:last-child)::after {
+  background: #1a3a70;
+}
+
+.step__label-action.active {
+  color: #1a3a70;
+  font-weight: 500;
+}
+
+.step__line-action {
+  width: 3.5rem;
+  height: 0.125rem;
+  background: #e5e7eb;
+  margin: 0 0.75rem;
+  flex-shrink: 0;
+}
+
+.step__line-action.completed {
+  background: #1a3a70;
+}
+
+.step-action {
+  cursor: pointer;
+}
+
+.progress-header {
+  max-width: 60rem;
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.progress-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4e4e4e;
+}
+
+.progress-step-count {
+  font-size: 1rem;
+  color: #4e4e4e;
+}

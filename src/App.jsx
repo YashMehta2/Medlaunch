@@ -6,9 +6,8 @@ import Review from "./pages/Review/Review.jsx";
 import Step21 from "./pages/Step2-1/Step21.jsx";
 import Step4 from "./pages/Step4/Step4.jsx";
 import Step5 from "./pages/Step5/Step5.jsx";
-import img from "./assets/images/Chatbot.png";
-import StepNavigation from "./StepNavigation.jsx";
 import { FormProvider } from "./FormContext.jsx";
+import ProgressHeader from "./ProgressHeader.jsx";
 
 function Navbar() {
   return (
@@ -27,8 +26,8 @@ export default function App() {
     <>
       <FormProvider>
         <Navbar />
+        <ProgressHeader />
         <button class="support-chat-btn">💬 Support Chat</button>
-
         <Routes>
           <Route path="/" element={<Step1 />} />
           <Route path="/step-2" element={<Step2 />} />
